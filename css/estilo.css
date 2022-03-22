@@ -88,6 +88,7 @@ body {
     background-color: #D1462F;
     color: white;
     font-weight: 300;
+    transition: all 0.3s ease;
 }
 
 .conteudo {
@@ -147,6 +148,10 @@ body {
 
 #password {
     color: #D1462F;
+}
+
+#password:hover {
+    color: black;
 }
 
 .rodape {
