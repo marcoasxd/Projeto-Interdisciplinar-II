@@ -139,6 +139,15 @@ body {
     padding: 0 5px;
 }
 
+#forgotpassword {
+    text-align: center;
+    font-size: 13px;
+    line-height: 30px;
+}
+
+#password {
+    color: #D1462F;
+}
 
 .rodape {
     background-color: #D1462F;
