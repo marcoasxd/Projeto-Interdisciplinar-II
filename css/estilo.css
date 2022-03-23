@@ -160,3 +160,10 @@ body {
     background-color: #D1462F;
     height: 5.7vh;
 }
+
+/* PÁGINA INICIAL */
+
+#cabecalho-inicial {
+    border: 1px solid red;
+    height: 14vh;
+}
