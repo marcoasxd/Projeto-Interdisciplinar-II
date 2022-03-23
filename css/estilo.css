@@ -176,3 +176,36 @@ body {
     margin: 10px;
     height: 60px;
 }
+
+.caixa-botoes {
+    border-radius: 15px;
+    background-color: white;
+    width: 960px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.botoes-caixa {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 6px;
+    background-color: transparent;
+    border: 2px solid #D1462F;
+    font-size: 20px;
+    color: #D1462F;
+    width: 60%;
+}
+
+.botoes-caixa:hover {
+    background-color: #D1462F;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.rodape-main {
+    background-color: #D1462F;
+    height: 6vh;
+}
