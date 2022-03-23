@@ -164,6 +164,15 @@ body {
 /* PÁGINA INICIAL */
 
 #cabecalho-inicial {
-    border: 1px solid red;
     height: 14vh;
+    justify-content: center;
+    justify-content: space-between;
+    display: flex;
+    padding-right: 20px;
+    background-color: gray;
+}
+
+#imagem-emge {
+    margin: 10px;
+    height: 60px;
 }
