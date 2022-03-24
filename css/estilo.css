@@ -76,6 +76,7 @@ body {
     border-width: 0;
     border: 1px solid #D1462F;
     margin-top: 8px;
+    cursor: pointer;
 }
 
 
@@ -189,14 +190,15 @@ body {
 }
 
 .botoes-caixa {
-    padding: 20px;
+    padding: 15px;
     margin: 10px;
-    border-radius: 6px;
+    border-radius: 20px;
     background-color: transparent;
     border: 2px solid #D1462F;
     font-size: 20px;
-    color: #D1462F;
+    color: black;
     width: 60%;
+    cursor: pointer;
 }
 
 .botoes-caixa:hover {
