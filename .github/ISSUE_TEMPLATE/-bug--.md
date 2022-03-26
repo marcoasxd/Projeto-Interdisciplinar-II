@@ -7,6 +7,9 @@ assignees: ''
 
 ---
 
+<!-- NÃO REMOVA ESSE TEMPLATE!! -->
+<!-- Preencha ao template de acordo com as perguntas abaixo. Qualquer informação adicional coloque no final do template. -->
+
 ### Descreva o problema ###
 
 
