@@ -11,18 +11,8 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.cabecalho {
-    margin: 0;
-    padding: 8px;
-}
-
-#cabecalho-emge {
-    background-position: center left;
-}
-
-#dhc {
-    float: right;
-    padding-right: 6px;
+#emge {
+    width: 155px;
 }
 
 .container {
@@ -99,11 +89,9 @@ body {
     background-color: white;
     width: 960px;
     height: 50%;
-}
-
-.main {
     justify-content: space-between;
     align-items: center;
+
 }
 
 .conteudo::before {
@@ -159,14 +147,6 @@ body {
     color: black;
 }
 
-.rodape {
-    background-color: #D1462F;
-    height: 5.7vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 /* PÁGINA INICIAL */
 
 .cabecalho-inicial {
@@ -186,7 +166,10 @@ body {
 .caixa {
     border-radius: 15px;
     background-color: white;
-    width: 960px;
+    width: 960px; 
+}
+
+.pagina-inicial {
     height: 70%;
     display: flex;
     flex-direction: row;
