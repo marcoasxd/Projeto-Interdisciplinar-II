@@ -99,9 +99,11 @@ body {
     background-color: white;
     width: 960px;
     height: 50%;
+}
+
+.main {
     justify-content: space-between;
     align-items: center;
-
 }
 
 .conteudo::before {
@@ -167,7 +169,7 @@ body {
 
 /* PÁGINA INICIAL */
 
-#cabecalho-inicial {
+.cabecalho-inicial {
     height: 14vh;
     justify-content: center;
     justify-content: space-between;
@@ -181,7 +183,7 @@ body {
     height: 60px;
 }
 
-.caixa-botoes {
+.caixa {
     border-radius: 15px;
     background-color: white;
     width: 960px;
