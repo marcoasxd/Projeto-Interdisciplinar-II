@@ -211,3 +211,11 @@ body {
     color: white;
     font-weight: 300;
 }
+
+.consultar-reserva {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 80px;
+}
