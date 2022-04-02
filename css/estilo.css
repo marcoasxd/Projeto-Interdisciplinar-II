@@ -167,10 +167,10 @@ body {
     border-radius: 15px;
     background-color: white;
     width: 960px; 
+    height: 70%;
 }
 
 .pagina-inicial {
-    height: 70%;
     display: flex;
     flex-direction: row;
     align-items: center;
