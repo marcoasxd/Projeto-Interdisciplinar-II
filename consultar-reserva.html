@@ -7,10 +7,6 @@
     <title>Consultar reserva</title>
     <link rel="stylesheet" href="css/estilo.css">
 </head>
-<script>
-    var dateControl = document.querySelector('input[type="date" name="datainicial"]');
-    dateControl = dateControl.toLocalDateString();
-</script>
 <body>
     <div class="cabecalho-inicial">
         <img src="imagens/alocsys_black.png">
@@ -22,7 +18,7 @@
                 <input type="text" name="matricula" id="matricula">
             </label>
             <label for="datainicial">Data inicial da reserva
-                <input type="date" name="datainicial" id="datainicial" min="dateControl">
+                <input type="date" name="datainicial" id="datainicial">
             </label>
             <label for="datafinal">Data final da reserva
                 <input type="date" name="datafinal" id="datafinal">
