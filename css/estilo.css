@@ -20,6 +20,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 80vh;
     background-color: #ecf0f1;
 }
@@ -215,10 +216,52 @@ body {
     font-weight: 300;
 }
 
-.consultar-reserva {
+.reserva {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+#form-reserva {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    height: 100%;
+    line-height: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+#form-reserva input {
+    border-radius: 5px;
+    border: none;
+    background-color: #ecf0f1;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+#form-reserva input:active {
+    border: none;
+}
+
+.btn-reserva {
+    background-color: transparent;
+    color: #D1462F;
+    padding: 10px 50px;
+    font-weight: 300;
+    align-self: center;
+    cursor: pointer;
+}
+
+.btn-reserva:hover {
+    background-color: #D1462F;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.reserva-tit {
     display: flex;
     align-items: center;
-    flex-direction: column;
     justify-content: center;
-    line-height: 80px;
+    color: #D1462F;
 }

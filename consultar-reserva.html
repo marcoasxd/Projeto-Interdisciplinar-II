@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,29 +8,35 @@
     <title>Consultar reserva</title>
     <link rel="stylesheet" href="css/estilo.css">
 </head>
+
 <body>
     <div class="cabecalho-inicial">
         <img src="imagens/alocsys_black.png">
         <img id="imagem-emge" src="imagens/emge_logo.png">
     </div>
     <div class="container">
-        <div class="caixa consultar-reserva">
-            <label for="matricula">Matricula
-                <input type="text" name="matricula" id="matricula">
-            </label>
-            <label for="datainicial">Data inicial da reserva
-                <input type="date" name="datainicial" id="datainicial">
-            </label>
-            <label for="datafinal">Data final da reserva
-                <input type="date" name="datafinal" id="datafinal">
-            </label>
-            <label for="recurso">Recurso
-                <input type="text" name="recurso" id="recurso">
-            </label>
+        <h2 class="reserva-tit">Consultar reserva</h2>
+        <div class="caixa reserva">
+            <form action="" id="form-reserva">
+                <label for="recurso" class="reserva-label">Matrícula
+                    <input type="text" name="matricula" id="">
+                </label>
+                <label for="dinicial" class="reserva-input">Data inicial da reserva
+                    <input type="date" name="dinicial" id="">
+                </label>
+                <label for="dfinal" class="reserva-input">Data final da reserva
+                    <input type="date" name="dfinal" id="">
+                </label>
+                <label for="recurso" class="reserva-input">Recurso
+                    <input type="text" name="recurso" id="">
+                </label>
+                <button class="btn btn-reserva">Cadastrar</button>
+            </form>
         </div>
     </div>
     <div class="rodape-main">
-        <p class="texto-rodape">&copy 2022 Copyright - Alocsys</p>
+        <div class="texto-rodape">&copy 2022 Copyright - Alocsys</div>
     </div>
 </body>
+
 </html>
