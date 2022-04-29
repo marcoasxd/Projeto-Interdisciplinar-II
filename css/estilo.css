@@ -59,12 +59,12 @@ body {
 .btn {
     border-radius: 15px;
     text-transform: uppercase;
-    color: #D1462F;
+    color: #C41C3E;
     font-weight: bold;
     width: 150px;
     align-self: center;
     border-width: 0;
-    border: 1px solid #D1462F;
+    border: 1px solid #C41C3E;
     margin-top: 8px;
     cursor: pointer;
 }
@@ -72,13 +72,13 @@ body {
 
 .btn-primary {
     background-color: transparent;
-    color: #D1462F;
+    color: #C41C3E;
     padding: 10px 50px;
     font-weight: 300;
 }
 
 .btn-primary:hover {
-    background-color: #D1462F;
+    background-color: #C41C3E;
     color: white;
     font-weight: 300;
     transition: all 0.3s ease;
@@ -97,7 +97,7 @@ body {
 .conteudo::before {
     content: "";
     position: absolute;
-    background-color: #D1462F;
+    background-color: #C41C3E;
     width: 35%;
     height: 100%;
     border-top-left-radius: 15px;
@@ -122,6 +122,7 @@ body {
     border: none;
     background-color: #ecf0f1;
     width: 100%;
+    padding-left: 5px;
 }
 
 .form input:active {
@@ -155,7 +156,7 @@ body {
     justify-content: space-between;
     display: flex;
     padding-right: 20px;
-    background-color: white;
+    background-image: linear-gradient(to right, #C41C3E, #A4B4CA);
 }
 
 #imagem-emge {
@@ -200,7 +201,7 @@ body {
 }
 
 .rodape-main {
-    background-color: #D1462F;
+    background-color: #C41C3E;
     height: 6vh;
     align-items: center;
     justify-content: center;
@@ -211,3 +212,68 @@ body {
     color: white;
     font-weight: 300;
 }
+<<<<<<< Updated upstream
+=======
+
+.reserva {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    width: 860px;
+    position: relative;
+}
+
+#form-reserva {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    height: 100%;
+    line-height: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+#form-reserva input {
+    border-radius: 5px;
+    border: none;
+    background-color: #ecf0f1;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+#form-reserva input:active {
+    border: none;
+}
+
+.btn-reserva {
+    background-color: transparent;
+    color: #D1462F;
+    padding: 10px 50px;
+    font-weight: 300;
+    align-self: center;
+    cursor: pointer;
+}
+
+.btn-reserva:hover {
+    background-color: #D1462F;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.reserva-tit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #D1462F;
+} 
+
+.tinput {
+    width: 200px;
+    display: inline-block;
+}
+
+.reserva-label {
+    display: block;
+    float: left;
+}
+>>>>>>> Stashed changes
