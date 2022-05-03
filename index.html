@@ -1,51 +1,49 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entre com seu login</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <script src="https://kit.fontawesome.com/8a4318b70a.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <div class="cabecalho-inicial">
-        <img src="imagens/alocsysw.png">
-        <img id="imagem-emge"src="imagens/emge_logo_white.png">
-    </div>
-    <div class="container">
-        <!-- Conteiner -->
-        <div class="conteudo primeiro-conteudo">
-            <!-- Caixa -->
-            <div class="primeira-coluna">
-                <!-- Lado esquerdo da caixa-->
-                <h2 class="titulo">Bem vindo!</h2>
-                <p class="descricao">Entre com seu login</p>
-            </div>
-            <div class="segunda-coluna">
-                <!-- Lado direito da caixa -->
-                <form action="" class="form">
-                    <label class="label-input" for="">
-                        <i class="fa-solid fa-user icon-modify"></i>
-                        <input type="text" name=""  placeholder="Login">
-                    </label>
-                    <label class="label-input" for="">
-                        <i class="fa-solid fa-lock icon-modify"></i>
-                        <input type="password" name="" placeholder="Senha">
-                    </label>
-                    <button class="btn btn-primary">Entrar</button>
-                    <p id="forgotpassword">
-                        <a id="password" href="#">Esqueceu a senha?</a>
-                    </p>
-                </form>
+    <header>
+        <div class="cabecalho"> <!-- Cabeçalho -->
+            <img src="imagens/alocsysw.png" width="140px" style="float: left;">
+            <img src="imagens/emge_logo_white.png" width="140px" style="float: right; margin-top: 8px; margin-right: 25px;">
+        </div>
+    </header>
+    <main>
+        <div class="container"> <!-- Área principal -->
+            <div class="conteudo primeiro-conteudo"> <!-- Caixa-->
+                <div class="primeira-coluna"> <!-- Lado esquerdo da caixa -->
+                    <h2 class="titulo">Bem vindo!</h2>
+                    <p class="desc">Entre com seu login</p>
+                </div>
+                <div class="segunda-coluna"> <!-- Lado direito da caixa -->
+                    <form action="" class="form"> <!-- Formulário de login -->
+                        <label for="" class="label">
+                            <i class="fa-solid fa-user icon-modify"></i>
+                            <input type="text" name="" class="input" placeholder="Login">
+                        </label>
+                        <label for="" class="label">
+                            <i class="fa-solid fa-lock icon-modify"></i>
+                            <input type="password" name="" id="" placeholder="Senha">
+                        </label>
+                        <button class="button">Entrar</button>
+                        <a href="">Esqueceu sua senha?</a>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="rodape-main">
-        <p class="texto-rodape">&copy 2022 Copyright - Alocsys</p>
-    </div> <!-- Rodapé -->
+    </main>
+    <footer> <!-- Rodapé -->
+        <div class="rodape">
+            <p class="texto-rodape">&copy 2022 Copyright - Alocsys</p>
+        </div>
+    </footer>
 </body>
-
 </html>

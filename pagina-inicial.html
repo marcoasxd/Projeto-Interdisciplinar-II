@@ -5,23 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilo.css">
-    <script src="https://kit.fontawesome.com/8a4318b70a.js" crossorigin="anonymous"></script>
     <title>Início</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <script src="https://kit.fontawesome.com/8a4318b70a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="cabecalho-inicial">
-        <img src="imagens/alocsysw.png">
-        <img id="imagem-emge"src="imagens/emge_logo_white.png">
-    </div>
-    <div class="container">
-        <div class="caixa pagina-inicial">
-            <a href="#"><button class="botao"><i class="fa-solid fa-clipboard-user icone1"></i><p>Realizar reserva</button></a>
-            <a href="#"><button class="botao"><i class="fa-solid fa-clipboard-list icone1"></i><p>Consultar reserva</p></button></a>
+    <header>
+        <div class="cabecalho">
+            <img src="imagens/alocsysw.png" width="140px" style="float: left;">
+            <img src="imagens/emge_logo_white.png" width="140px" style="float: right; margin-top: 8px; margin-right: 25px;">
         </div>
-    </div>
-    <div class="rodape-main">
-        <p class="texto-rodape">&copy 2022 Copyright - Alocsys</p>
-    </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="box inicial">
+                <a href="realizar-reserva.html"><button class="botao-inicial"><i class="fa-solid fa-clipboard-user icone"></i><p>Realizar reserva</button></a>
+                <a href="consultar-reserva.html"><button class="botao-inicial"><i class="fa-solid fa-clipboard-list icone"></i><p>Consultar reserva</p></button></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="rodape">
+            <p class="texto-rodape">&copy 2022 Copyright - Alocsys</p>
+        </div>
+    </footer>
 </body>
 </html>

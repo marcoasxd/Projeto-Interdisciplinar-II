@@ -1,38 +1,45 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <title>Consultar reserva</title>
-    <link rel="stylesheet" href="css/estilo.css">
 </head>
-
 <body>
-    <div class="cabecalho-inicial">
-        <img src="imagens/alocsysw.png">
-        <img id="imagem-emge" src="imagens/emge_logo_white.png">
-    </div>
-    <div class="container">
-        <h2 class="reserva-tit">Consultar reserva</h2>
-        <div class="caixa reserva">
-            <form action="" id="form-reserva">
-                <label for="recurso" class="reserva-label">Matrícula</label>
-                <input type="text" name="matricula" class="tinput">
-                <label for="dinicial" class="reserva-label">Data inicial da reserva</label>
-                <input type="date" name="dinicial" class="tinput">
-                <label for="dfinal" class="reserva-label">Data final da reserva</label>
-                <input type="date" name="dfinal" class="tinput">
-                <label for="recurso" class="reserva-label">Recurso</label>
-                <input type="text" name="recurso" class="tinput">
-                <button class="btn btn-reserva">Cadastrar</button>
-            </form>
+    <header>
+        <div class="cabecalho">
+            <img src="imagens/alocsysw.png" width="140px" style="float: left;">
+            <img src="imagens/emge_logo_white.png" width="140px" style="float: right; margin-top: 8px; margin-right: 25px;">
         </div>
-    </div>
-    <div class="rodape-main">
-        <div class="texto-rodape">&copy 2022 Copyright - Alocsys</div>
-    </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="box reserva">
+                <form action="" class="form consultar-reserva">
+                    <label for="">Matrícula
+                        <input type="text" name="" id="" placeholder="Insira sua matrícula">
+                    </label>
+                    <label for="">Data inicial da reserva
+                        <input type="date" name="" id="">
+                    </label>
+                    <label for="">Data final da reserva
+                        <input type="date" name="" id="">
+                    </label>
+                    <label for="">Recurso
+                        <input type="text" name="" id="">
+                    </label>
+                    <button class="button">Consultar reserva</button>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="rodape">
+                <p class="texto-rodape">&copy 2022 Copyright - Alocsys</p>
+            </div>
+        </footer>
+    </main>
 </body>
-
 </html>
