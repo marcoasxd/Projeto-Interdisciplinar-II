@@ -10,6 +10,9 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #ecf0f1;
+	background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .cabecalho {
@@ -18,6 +21,9 @@ body {
     background-image: -o-linear-gradient(left, #C41C3E, #A4B4CA);
     background-image: linear-gradient(to right, #C41C3E, #A4B4CA);
     padding-right: 7px;
+	background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .container {
@@ -31,6 +37,10 @@ body {
     -ms-flex-align: center;
     align-items: center;
     height: 75vh;
+
+	background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .box {
@@ -38,6 +48,9 @@ body {
     width: 960px;
     height: 50vh;
     border-radius: 11px;
+	background-size: cover;
+	background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .rodape {
@@ -55,11 +68,17 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+	background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .texto-rodape {
     color: white;
     font-weight: 300;
+	background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 /* Formatações de "index.html" */
@@ -75,6 +94,10 @@ body {
     -ms-flex-align: center;
     align-items: center;
     border-radius: 11px;
+	background-size: cover;
+	box-shadow: 10px 10px 10px 	#696969;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .conteudo:before {
@@ -85,6 +108,11 @@ body {
     height: 100%;
     border-top-left-radius: 11px;
     border-bottom-left-radius: 11px;
+	background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+	
 
 }
 
@@ -93,6 +121,10 @@ body {
     display: -ms-flexbox;
     display: flex;
     position: relative;
+	background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+	
 }
 
 .primeira-coluna {
@@ -101,6 +133,9 @@ body {
     -ms-flex: 1 0 auto;
     flex: 1 0 auto;
     z-index: 10;
+	background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .titulo {
@@ -108,6 +143,9 @@ body {
     font-size: 28px;
     font-weight: bold;
     text-align: center;
+	background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .desc {
@@ -115,6 +153,9 @@ body {
     color: white;
     font-weight: 300;
     line-height: 40px;
+	background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .segunda-coluna {
@@ -131,6 +172,9 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+	background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .form {
@@ -142,6 +186,9 @@ body {
     -ms-flex-direction: column;
     flex-direction: column;
     width: 55%;
+	background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .label {
@@ -149,28 +196,41 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    border-radius: 8px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     margin: 8px;
+	background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 input {
     height: 45px;
     border: none;
+    border-radius: 8px;
     background-color: #ecf0f1;
     width: 100%;
     padding-left: 5px;
+	background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 input:active {
     border: none;
+	background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
+
 
 .icon-modify {
     color: #7F8C8D;
     margin-right: 5px;
     margin-left: 7px;
+	background-size: cover;
 }
 
 .button {
@@ -181,6 +241,7 @@ input:active {
     border: 1px solid #C41C3E;
     text-transform: uppercase;
     width: 100%;
+	background-size: cover;
 }
 
 .button:hover {
@@ -189,6 +250,7 @@ input:active {
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
+	background-size: cover;
 }
 
 a {
@@ -196,6 +258,7 @@ a {
     font-size: 14px;
     text-align: center;
     margin-top: 6px;
+	background-size: cover;
 }
 
 /* Formatações de "pagina-inicial.html" */
@@ -210,6 +273,9 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+	background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .botao-inicial {
@@ -220,45 +286,70 @@ a {
     border-radius: 14px;
     font-size: 19px;
     cursor: pointer;
+	background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 /* .botao-inicial:hover { // Futura customização do botão 
-
 } */
 
 .icone {
     margin-bottom: 30px;
     font-size: 90px;
     color: #C41C3E;
+	background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 /* Formatação de "consultar-reserva.html" */ 
 
 .reserva {
     height: 90%;
+    box-shadow: 10px 10px 10px 	#696969;
+	background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .consultar-reserva {
     margin: 0 auto;
+	background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .consultar-reserva label {
     margin: 15px;
+	background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 } 
 
 /* Formatação de "realizar reserva.html" */
 
 .realizar-reserva {
     height: 90%;
+    box-shadow: 10px 10px 10px 	#696969;
+	background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .form-realizar-reserva {
     margin: 0 auto;
     line-height: 30px;
+	background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .btn-realizar-reserva {
     margin-top: 10px;
+	background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 /* Formatação de "cadastrar usuario.html" */
@@ -268,12 +359,24 @@ a {
     height: auto;
     padding-top: 10px;
     padding-bottom: 10px;
+    box-shadow: 10px 10px 10px 	#696969;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .form-cadastrar-usuario {
     margin: 0 auto;
+	background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
 }
 
 .btn-cadastrar-usuario {
     margin-top: 15px;
+	background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+   
 }
