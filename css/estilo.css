@@ -1,377 +1,135 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
-/* Formatações iniciais */
-* {
-    margin: 0;
-    padding: 0;
-}
-
 /* Layout */
 
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #ecf0f1;
-	background-size: cover;
-    background-attachment: fixed;
+.body-background {
+    background-image: linear-gradient(210deg, rgba(196,28,62,1) 28%, rgba(164,180,202,1) 83%);
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .cabecalho {
     height: 15vh;
-    background-image: -webkit-gradient(linear, left top, right top, from(#C41C3E), to(#A4B4CA));
-    background-image: -o-linear-gradient(left, #C41C3E, #A4B4CA);
-    background-image: linear-gradient(to right, #C41C3E, #A4B4CA);
-    padding-right: 7px;
-	background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
 }
 
-.container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: 75vh;
-
-	background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+.emge {
+    margin: 8px 30px 0px 0px;
 }
 
-.box {
-    background-color: white;
-    width: 960px;
-    height: 50vh;
-    border-radius: 11px;
-	background-size: cover;
-	background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-.rodape {
-    height: 7vh;
-    background-color: #C41C3E;
-    position: relative;
-    top: 19px;
-    text-align: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-	background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-.texto-rodape {
-    color: white;
-    font-weight: 300;
-	background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-/* Formatações de "index.html" */
-
-.conteudo {
-    background-color: white;
-    width: 960px;
-    height: 50vh;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    border-radius: 11px;
-	background-size: cover;
-	box-shadow: 10px 10px 10px 	#696969;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-.conteudo:before {
-    content: "";
-    position: absolute;
-    background-color: #C41C3E;
-    width: 35%;
-    height: 100%;
-    border-top-left-radius: 11px;
-    border-bottom-left-radius: 11px;
-	background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-.primeiro-conteudo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-	background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-.primeira-coluna {
-    text-align: center;
-    -webkit-box-flex: 1;
-    -ms-flex: 1 0 auto;
-    flex: 1 0 auto;
-    z-index: 10;
-	background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-.titulo {
-    color: white;
-    font-size: 28px;
-    font-weight: bold;
-    text-align: center;
-	background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-.desc {
-    font-size: 14px;
-    color: white;
-    font-weight: 300;
-    line-height: 40px;
-	background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-.segunda-coluna {
-    -webkit-box-flex: 2;
-    -ms-flex: 2 0 auto;
-    flex: 2 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-	background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-.form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 55%;
-	background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-.label {
-    background-color: #ecf0f1;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    border-radius: 8px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin: 8px;
-	background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-input {
-    height: 45px;
-    border: none;
-    border-radius: 8px;
-    background-color: #ecf0f1;
+.container-main {
     width: 100%;
-    padding-left: 5px;
-	background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    height: 85vh;
 }
 
-input:active {
-    border: none;
-	background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-
-.icon-modify {
-    color: #7F8C8D;
-    margin-right: 5px;
-    margin-left: 7px;
-	background-size: cover;
-}
-
-.button {
-    background-color: white;
-    color: #C41C3E;
-    border-radius: 10px;
-    padding: 7px;
-    border: 1px solid #C41C3E;
-    text-transform: uppercase;
-    width: 100%;
-	background-size: cover;
-}
-
-.button:hover {
-    background-color: #C41C3E;
+.caixa-login {
     color: white;
-    -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-	background-size: cover;
-}
-
-a {
-    color: #C41C3E;
-    font-size: 14px;
-    text-align: center;
-    margin-top: 6px;
-	background-size: cover;
-}
-
-/* Formatações de "pagina-inicial.html" */
-
-.box {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-	background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-.botao-inicial {
-    height: 200px;
-    width: 180px;
-    margin: 100px;
-    border: none;
-    border-radius: 14px;
-    font-size: 19px;
-    cursor: pointer;
-	background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-/* .botao-inicial:hover { // Futura customização do botão 
-} */
-
-.icone {
-    margin-bottom: 30px;
-    font-size: 90px;
-    color: #C41C3E;
-	background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-/* Formatação de "consultar-reserva.html" */ 
-
-.reserva {
-    height: 90%;
-    box-shadow: 10px 10px 10px 	#696969;
-	background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-.consultar-reserva {
+    background: rgba(26, 15, 15, 0.4);
+    width: 450px;
     margin: 0 auto;
-	background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 11px;
 }
 
-.consultar-reserva label {
-    margin: 15px;
-	background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-} 
-
-/* Formatação de "realizar reserva.html" */
-
-.realizar-reserva {
-    height: 90%;
-    box-shadow: 10px 10px 10px 	#696969;
-	background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+.link-index {
+    font-size: 0.9em;
+    margin: 0;
 }
 
-.form-realizar-reserva {
-    margin: 0 auto;
-    line-height: 30px;
-	background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-.btn-realizar-reserva {
+.caixa-login button {
     margin-top: 10px;
-	background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
 }
 
-/* Formatação de "cadastrar usuario.html" */
+/* Para pagina-inicial.html */
 
-.cadastrar-usuario {
-    line-height: 40px;
+.inicial {
     height: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    box-shadow: 10px 10px 10px 	#696969;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
-.form-cadastrar-usuario {
-    margin: 0 auto;
-	background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    
+.pagina-inicial-opcoes {
+    margin-top: 100px;
 }
 
-.btn-cadastrar-usuario {
-    margin-top: 15px;
-	background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+.menu-opcoes {
+    height: 15em;
+    width: 13em;
+    vertical-align: middle;
+}
+
+/* Para realizar-reserva.html */
+
+.container-teste {
+    height: auto;
+    width: 100%;
+}
+
+.caixa-cadastro {
+    background: rgba(26, 15, 15, 0.4);
+    color: white;
+    border-radius: 11px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.form-control textarea {
+    max-width: 100%; 
+    max-height: 100%;
+    resize: none;
+}
+
+/* Para consultar-reserva.html */
+
+.container-fluid {
+    color: white;
+}
+
+.container-fluid a, a:hover {
+    color: white;
+}
+
+
+/*
+ Media queries: Servem para que determinada alteração do layout seja formatada em cada resolução de tela..
+
+ */
+
+@media only screen and (max-width: 575.98px) { 
+    .container-main {
+        position: relative;
+    }
+    .caixa-login {
+        border-radius: 0;
+        position: absolute;
+        width: 100%;
+    }
+    .container-page {
+        border-radius: 0;
+    }
+    .caixa-cadastro {
+        max-width: 100%;
+        width: 540px;
+        border-radius: 0;
+        margin: 0;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .caixa-cadastro {
+        max-width: 540px;
+        width: 100%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .caixa-cadastro {
+        max-width: 720px;
+        width: 100%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .caixa-cadastro {
+        max-width: 720px;
+        width: 100%;
+    }
+}
+@media (min-width: 1200px) { 
+    .caixa-cadastro {
+        max-width: 720px;
+        width: 100%;
+    }
 }

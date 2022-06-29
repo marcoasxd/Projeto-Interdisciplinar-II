@@ -4,46 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entre com seu login</title>
-    <link rel="stylesheet" type="text/css" href="css/estilo.css">
-    <script src="https://kit.fontawesome.com/8a4318b70a.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Entre com o seu login</title>
 </head>
-<body>
+
+<body class="body-background">
     <header>
-        <div class="cabecalho"> <!-- Cabeçalho -->
-            <img src="imagens/alocsysw.png" width="140px" style="float: left;">
-            <img src="imagens/emge_logo_white.png" width="140px" style="float: right; margin-top: 8px; margin-right: 25px;">
+        <div class="clearfix cabecalho">
+            <img src="imagens/alocsysw.png" class="float-left" width="140px">
+            <img src="imagens/emge.png" class="emge float-right" width="70px">
         </div>
     </header>
-    <main>
-        <div class="container"> <!-- Área principal -->
-            <div class="conteudo primeiro-conteudo"> <!-- Caixa-->
-                <div class="primeira-coluna"> <!-- Lado esquerdo da caixa -->
-                    <h2 class="titulo">Bem vindo!</h2>
-                    <p class="desc">Entre com seu login</p>
+    <div class="container-main d-flex justify-content-center align-items-center">
+        <div class="caixa-login p-4">
+            <h4 class="text-center text-white">Login</h4>
+            <form action="" class="d-flex flex-column justify-content-center">
+                <div class="form-group">
+                    <label for="usuario" class="text-white">Usuário</label>
+                    <input class="form-control form-control-lg" type="text" name="" id="usuario" placeholder="Insira seu usuário">
                 </div>
-                <div class="segunda-coluna"> <!-- Lado direito da caixa -->
-                    <form action="" class="form"> <!-- Formulário de login -->
-                        <label for="" class="label">
-                            <i class="fa-solid fa-user icon-modify"></i>
-                            <input type="text" name="" class="input" placeholder="Login" required>
-                        </label>
-                        <label for="" class="label">
-                            <i class="fa-solid fa-lock icon-modify"></i>
-                            <input type="password" name="" id="" placeholder="Senha" required>
-                        </label>
-                        <button class="button">Entrar</button>
-                        <a href="">Esqueceu sua senha?</a>
-                    </form>
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="" id="senha" class="form-control form-control-lg" placeholder="Insira sua senha">
+                    <a class="link-index text-right text-white" href="http://suporte.domhelder.edu.br/index.php?redirect=%2Fmarketplace%2Fformcreator%2Ffront%2Fformdisplay.php%3Fid%3D10&error=3">Esqueceu a senha ou não possui login?</a>
                 </div>
-            </div>
+                <button class="btn btn-outline-light btn-block btn-lg">Entrar</button>
+            </form>
         </div>
-    </main>
-    <footer> <!-- Rodapé -->
-        <div class="rodape">
-            <p class="texto-rodape">&copy 2022 Copyright - Alocsys</p>
-        </div>
-    </footer>
+    </div>
 </body>
+
 </html>

@@ -4,42 +4,147 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/estilo.css">
-    <title>Consultar reserva</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Minhas reservas</title>
 </head>
-<body>
-    <header>
-        <div class="cabecalho">
-            <img src="imagens/alocsysw.png" width="140px" style="float: left;">
-            <img src="imagens/emge_logo_white.png" width="140px" style="float: right; margin-top: 8px; margin-right: 25px;">
-        </div>
-    </header>
-    <main>
-        <div class="container">
-            <div class="box reserva">
-                <form action="" class="form consultar-reserva">
-                    <label for="">Matrícula
-                        <input type="text" name="" id="" placeholder="Insira sua matrícula" required>
-                    </label>
-                    <label for="">Data inicial da reserva
-                        <input type="date" name="" id="">
-                    </label>
-                    <label for="">Data final da reserva
-                        <input type="date" name="" id="">
-                    </label>
-                    <label for="">Recurso
-                        <input type="text" name="" id="" required>
-                    </label>
-                    <button class="button">Consultar reserva</button>
-                </form>
+<body class="body-background">
+    <div class="cabecalho clearfix">
+        <img src="imagens/alocsysw.png" class="float-left" width="140px">
+        <img src="imagens/emge.png" class="emge float-right" width="70px">
+    </div>
+    <div class="container-teste">
+        <div class="container-fluid p-4 mb-2" style="background: rgba(26, 15, 15, 0.4) ;">
+            <div class="table-responsive">
+                <table class="table table-bordered table-sm">
+                    <thead style="background-color:white; color: black;">
+                        <tr>
+                            <th>Solicitante</th>
+                            <th>Início da reserva</th>
+                            <th>Fim da reserva</th>
+                            <th>Justificativa</th>
+                            <th>Código de solicitação</th>
+                            <th>Recurso</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>JOÃO VICTOR ANDRADE</td>
+                            <td>03/06/2022</td>
+                            <td>06/06/2022</td>
+                            <td>ESTUDOS</td>
+                            <td>SOL00001</td>
+                            <td>NOTEBOOK LENOVO THINKPAD T490</td>
+                            <td>EM ANDAMENTO</td>
+                        </tr>
+                        <tr>
+                            <td>JOÃO VICTOR ANDRADE</td>
+                            <td>03/06/2022</td>
+                            <td>06/06/2022</td>
+                            <td>USO DO NOTEBOOK PARA A AULA DE ALGORITMOS E ESTRUTURA DE DADOS II</td>
+                            <td>SOL00002</td>
+                            <td>NOTEBOOK LENOVO THINKPAD T490</td>
+                            <td>EM ANDAMENTO</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <nav>
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                            <a href="#" class="page-link">Anterior</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">Próximo</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
-        <footer>
-            <div class="rodape">
-                <p class="texto-rodape">&copy 2022 Copyright - Alocsys</p>
-            </div>
-        </footer>
-    </main>
+    </div>
+    <script>
+        // DataTable
+        $(document).ready(function() {
+            $('#solicitacoes').DataTable();
+        });
+    
+        // Busca
+        $(document).ready(function() {
+            $('#data_reserva').hide();
+            $('#button_buscar_recurso').hide();
+            $('#button_buscar_data').hide();
+            $('#alert_data').hide();
+            $('#alert_data_inicio_empty').hide();
+            $('#alert_data_fim_empty').hide();
+            $('#button_minhas_solicitacoes').hide();
+    
+            $('#busca').change(function() {
+                if ($('#busca').val() == '2') {
+                    $('#Recurso').hide();
+                    $('#button_minhas_solicitacoes').hide();
+                    $('#data_reserva').show();
+                } else if ($('#busca').val() == '3') {
+                    $('#Recurso').hide();
+                    $('#data_reserva').hide();
+                    $('#button_minhas_solicitacoes').show();
+                } else {
+                    $('#data_reserva').hide();
+                    $('#button_minhas_solicitacoes').hide();
+                    $('#Recurso').show();
+                }
+            });
+    
+            $('#option_recurso').change(function() {
+                if ($('#option_recurso').val() != 'Escolha uma opção') {
+                    $('#button_minhas_solicitacoes').hide();
+                    $('#button_buscar_recurso').show();
+                } else {
+                    $('#button_buscar_recurso').hide();
+                    $('#button_minhas_solicitacoes').hide();
+                }
+            });
+    
+            // Verificação das datas
+            $('#data_reserva').change(function() {
+                if ($('#data_inicio_reserva').val() == '' && $('#data_fim_reserva').val() == '') {
+                    $('#alert_data_empty').show();
+                    $('#alert_data_fim_empty').hide();
+                    $('#alert_data_inicio_empty').hide();
+                    $('#button_buscar_data').hide();
+    
+                } else if ($('#data_inicio_reserva').val() == '' && $('#data_fim_reserva').val() != '') {
+                    $('#alert_data_empty').hide();
+                    $('#alert_data_fim_empty').hide();
+                    $('#button_buscar_data').hide();
+                    $('#alert_data_inicio_empty').show();
+                    
+                } else if ($('#data_inicio_reserva').val() != '' && $('#data_fim_reserva').val() == '') {
+                    $('#alert_data_inicio_empty').hide();
+                    $('#alert_data_empty').hide();
+                    $('#button_buscar_data').hide();
+                    $('#alert_data_fim_empty').show();
+    
+                } else if ($('#data_inicio_reserva').val() != '' && $('#data_fim_reserva').val() != '') {
+                    $('#alert_data_inicio_empty').hide();
+                    $('#alert_data_fim_empty').hide();
+                    $('#alert_data_empty').hide();
+    
+                    if ($('#data_inicio_reserva').val() > $('#data_fim_reserva').val()) {
+                        $('#button_buscar_data').hide();
+                        $('#alert_data').show();
+                    } else {
+                        $('#alert_data').hide();
+                        $('#button_buscar_data').show();
+                    }
+                }
+    
+            });
+        });
+    </script>
 </body>
 </html>
