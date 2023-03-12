@@ -17,10 +17,6 @@
  <ul>
   <li>HTML</li>
   <li>CSS</li>
-  <li>PHP</li>
-  <li>JavaScript</li>
-  <li>SQL</li>
- </ul>
- 
- <p>Desenvolvido por Jefferson Brandão, João Victor Castro, Leonardo Pereira, Leopoldo Júnior, Marco Antonio Mendes e Pedro Afonso Souza</p>
+
+ <p>Desenvolvido por Marco Antonio Mendes </p>
 
