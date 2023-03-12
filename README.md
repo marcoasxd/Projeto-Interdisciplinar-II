@@ -17,6 +17,7 @@
  <ul>
   <li>HTML</li>
   <li>CSS</li>
+ </ul> 
 
  <p>Desenvolvido por Marco Antonio Mendes </p>
 
